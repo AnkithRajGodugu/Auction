@@ -1,0 +1,127 @@
+/* Import Google Font for consistency with other files */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* Parent container to center the card (optional, if used) */
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Full viewport height for vertical centering */
+    padding: 20px;
+    background: #fff; /* Default light mode */
+    transition: background 0.5s ease;
+}
+
+/* Card styles */
+.card {
+    border: 1px solid blanchedalmond;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgb(77, 75, 75);
+    padding: 30px;
+    margin: 20px auto; /* Centered with auto margins, reduced from 70px */
+    text-align: center;
+    max-width: 350px;
+    width: 100%; /* Ensures responsiveness */
+    background: #fff; /* Default light mode */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.5s ease;
+}
+
+/* Hover effect */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 5px 5px 15px rgb(50, 50, 50);
+}
+
+/* Card image */
+.card .card-image {
+    max-width: 70%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    display: block; /* Ensures it’s centered */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Card title */
+.card .card-tittle { /* Note: "tittle" seems like a typo; assuming "title" */
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    margin: 5px;
+    color: rgb(62, 70, 16); /* Olive green */
+    font-size: 1.5rem;
+    font-weight: 500;
+    transition: color 0.5s ease;
+}
+
+/* Card text */
+.card .card-text {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    color: rgb(20, 91, 91); /* Teal */
+    font-size: 16px;
+    font-weight: 400;
+    transition: color 0.5s ease;
+}
+
+/* Dark Mode */
+.dark .card-container {
+    background: #222;
+}
+
+.dark .card {
+    background: #333;
+    border-color: #444;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.dark .card:hover {
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.7);
+}
+
+.dark .card .card-tittle {
+    color: rgb(100, 120, 40); /* Lighter olive green */
+}
+
+.dark .card .card-text {
+    color: rgb(26, 140, 140); /* Lighter teal */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .card {
+        padding: 20px;
+        margin: 15px auto;
+        max-width: 300px;
+    }
+
+    .card .card-tittle {
+        font-size: 1.25rem;
+    }
+
+    .card .card-text {
+        font-size: 14px;
+    }
+
+    .card .card-image {
+        max-width: 60%;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        padding: 15px;
+        margin: 10px auto;
+        max-width: 250px;
+    }
+
+    .card .card-tittle {
+        font-size: 1.1rem;
+    }
+
+    .card .card-text {
+        font-size: 13px;
+    }
+
+    .card .card-image {
+        max-width: 50%;
+    }
+}

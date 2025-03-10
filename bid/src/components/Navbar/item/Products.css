@@ -1,0 +1,33 @@
+.container{
+    
+    font-family: "Arial, sans-serif";
+    max-width:"800px";
+    margin: "0 auto";
+}
+.header{
+    color: rgb(62, 70, 16);
+    
+        
+    
+}
+.header2{
+    color: rgb(20, 91, 91);
+}
+.button{
+    
+    color: rgb(20, 91, 91);
+}
+.dark .button{
+    
+    background-color: #222;
+
+}
+.light .button{
+    background-color: #fff;
+}
+.header3{
+    color: rgb(20, 91, 91);
+}
+.inside{
+    color: rgb(62, 70, 16);
+}

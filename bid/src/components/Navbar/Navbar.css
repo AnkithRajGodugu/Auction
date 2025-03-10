@@ -1,0 +1,267 @@
+/* .navbar  {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    padding: 15px 7%;
+    transition: 0.5s;
+    
+}
+.logo{
+    width: 200px;
+    cursor: pointer;
+     margin-right: 50px; 
+}
+ul{
+    flex: 1;
+    list-style: none;
+    text-align: center;
+   
+}
+ul li{
+    display: inline-block;
+    margin: 10px 20px;
+    font-size: 24px;
+    cursor: pointer;
+    
+}
+.toggle-icon{
+    width: 50px;
+    cursor: pointer;
+    margin-left: 50px;
+
+}
+.search-box{
+    display: flex;
+    align-items: center;
+    background-color: #242424;
+    padding: 20px 40px;
+    border-radius: 100px;
+
+}
+.search-box input{
+    padding: 6px;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    color: #fff;
+    font-size: 18px;
+    max-width: 200px;
+}
+.search-box input::placeholder{
+    color: #fff;
+}
+.search-box img{
+    width: 30px;
+    cursor: pointer;
+}
+.dark .navbar{
+    background: #000;
+    color: #fff;
+}
+.dark .search-box{
+    background: #fff;
+}
+.dark .search-box input{
+    color: #222;
+}
+.dark .search-box input::placeholder{
+    color: #222;
+}
+.home-link {
+    color: black;
+}
+/* .home-link.active {
+    color: #bc1010;
+}
+.home-link:hover {
+    color: rgb(222, 18, 18); /*Optional: hover color 
+
+.dark .home-link{
+    
+    color: #fff;
+
+}
+.light .home-link{
+    color: #222;
+} */
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    padding: 15px 7%;
+    transition: background 0.5s ease, color 0.5s ease;
+}
+
+.logo {
+    width: 200px;
+    cursor: pointer;
+    margin-right: 50px;
+}
+
+ul {
+    flex: 1;
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    display: inline-block;
+    margin: 10px 20px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.toggle-icon {
+    width: 50px;
+    cursor: pointer;
+    margin-left: 50px;
+    transition: opacity 0.3s ease;
+}
+
+.toggle-icon:hover {
+    opacity: 0.8;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    background-color: #242424;
+    padding: 10px 20px; 
+    border-radius: 50px; 
+    transition: background 0.5s ease;
+}
+
+.search-box input {
+    padding: 6px;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    color: #fff;
+    font-size: 18px;
+    width: 200px; 
+    transition: color 0.5s ease;
+}
+
+.search-box input::placeholder {
+    color: #fff;
+    opacity: 0.7;
+}
+
+.search-box img {
+    width: 25px; 
+    height: 25px;
+    cursor: pointer;
+    margin-left: 10px; 
+    transition: opacity 0.3s ease;
+}
+
+.search-box img:hover {
+    opacity: 0.8;
+}
+
+
+.dark .navbar {
+    background: #000;
+    color: #fff;
+}
+
+.dark .search-box {
+    background: #fff;
+}
+
+.dark .search-box input {
+    color: #222;
+}
+
+.dark .search-box input::placeholder {
+    color: #555;
+}
+
+
+.light .navbar {
+    background: #fff;
+    color: #222;
+}
+
+.home-link {
+    color: #222; 
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.dark .home-link {
+    color: #fff; 
+}
+
+.home-link:hover {
+    color: #bc1010;
+}
+
+.home-link.active {
+    color: #890a0a; 
+}
+
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 15px 5%;
+    }
+
+    .logo {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    ul {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    ul li {
+        margin: 10px 15px;
+        font-size: 20px;
+    }
+
+    .toggle-icon {
+        margin-left: 0;
+        margin-top: 15px;
+    }
+
+    .search-box {
+        width: 100%;
+        max-width: 300px;
+        padding: 8px 15px;
+    }
+
+    .search-box input {
+        width: 100%; 
+        font-size: 16px;
+    }
+
+    .search-box img {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    ul li {
+        font-size: 18px;
+        margin: 8px 10px;
+    }
+
+    .logo {
+        width: 150px;
+    }
+
+    .toggle-icon {
+        width: 40px;
+    }
+}
