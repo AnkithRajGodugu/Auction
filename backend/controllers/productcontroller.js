@@ -65,7 +65,7 @@ const createProduct = async (req, res) => {
             startingDate: new Date(startingDate),
             endingDate: new Date(endingDate),
             sellerInfo: parsedSellerInfo,
-            image: req.file ? `/uploads/${req.file.filename}` : null,
+            image: req.file ? req.file.location : null, // Use S3 URL
             auctionInfo: { status: "Open", currentPrice: 0, currentBidder: null },
             user: req.user.id,
         };
@@ -89,7 +89,7 @@ const updateProduct = async (req, res) => {
         if (startingDate) updatedData.startingDate = new Date(startingDate);
         if (endingDate) updatedData.endingDate = new Date(endingDate);
         if (sellerInfo) updatedData.sellerInfo = JSON.parse(sellerInfo);
-        if (req.file) updatedData.image = `/uploads/${req.file.filename}`;
+        if (req.file) updatedData.image = req.file.location; // Use S3 URL
 
         const product = await Product.findOneAndUpdate(
             { _id: req.params.id, user: req.user.id },
